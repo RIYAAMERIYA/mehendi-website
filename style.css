@@ -1,0 +1,87 @@
+:root {
+  --gold: #c9a227;
+  --brown: #5a2d0c;
+  --bg: #fff6f0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  position: sticky; top: 0;
+  background: #111;
+  padding: 12px 16px;
+  z-index: 10;
+}
+.nav-container {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: 1100px; margin: auto;
+}
+.logo { color: #fff; font-family: "Playfair Display", serif; }
+.nav-links { list-style: none; display: flex; gap: 14px; }
+.nav-links a { color: #fff; text-decoration: none; font-size: 14px; }
+
+.hero {
+  min-height: 70vh;
+  display: grid; place-items: center;
+  text-align: center;
+  padding: 60px 16px;
+  background: linear-gradient(135deg, #2b0f08, #5a2d0c);
+  color: #fff;
+}
+.hero h1 { font-family: "Playfair Display", serif; font-size: 32px; margin-bottom: 10px; }
+
+.btn, .btn-glow {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  background: var(--gold);
+  color: #111;
+  margin-top: 10px;
+}
+
+section { padding: 48px 16px; max-width: 1100px; margin: auto; }
+h2 { text-align: center; margin-bottom: 18px; font-family: "Playfair Display", serif; }
+
+.gallery-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+.gallery-grid img { width: 100%; border-radius: 12px; }
+
+.service-cards, .design-cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: #fff; padding: 16px; border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+}
+.price { font-weight: 600; color: var(--brown); }
+
+.booking form, #booking-form {
+  max-width: 520px; margin: 0 auto;
+  display: grid; gap: 10px;
+}
+input, select, textarea, button {
+  padding: 10px; border-radius: 10px; border: 1px solid #ddd;
+  font-family: inherit;
+}
+button.btn { border: none; cursor: pointer; }
+
+.contact-info { text-align: center; display: grid; gap: 8px; margin-bottom: 12px; }
+.contact a { color: var(--brown); text-decoration: none; }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}
