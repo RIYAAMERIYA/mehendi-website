@@ -71,27 +71,28 @@
 <section id="booking" class="booking">
   <h2>Book Your Appointment</h2>
   <form id="booking-form">
-    <input type="text" placeholder="Your Name" required/>
-    <input type="tel" placeholder="Phone Number" required/>
-    <input type="text" placeholder="City" value="Jaipur" required/>
-    <select required>
-      <option value="">Event Type</option>
-      <option>Bridal</option>
-      <option>Engagement</option>
-      <option>Party</option>
-      <option>Festival</option>
-    </select>
-    <input type="date" required/>
-    <textarea placeholder="Message (optional)"></textarea>
-    <a href="https://wa.me/919352046191?text=Hello%20I%20want%20to%20book%20mehendi%20for%20a%20function.%0AName:%20%0APhone:%20%0ACity:%20Jaipur%0ADate:%20%0AEvent:%20"
-   class="btn"
-   target="_blank">
-Book on WhatsApp
-      <input id="name" placeholder="Your Name">
-<input id="city" placeholder="Your City">
+    <input type="text" id="name" placeholder="Your Name" required>
 
-<button onclick="bookNow()">Book Now</button>
-    </a>
+<select id="service" required>
+  <option value="">Select Event Type</option>
+  <option value="Bridal Mehendi">Bridal</option>
+  <option value="Engagement Mehendi">Engagement</option>
+  <option value="Party Mehendi">Party</option>
+  <option value="Festival Mehendi">Festival</option>
+</select>
+
+<input type="date" id="date" required>
+
+<input type="text" id="city" placeholder="Your City" value="Jaipur" required>
+
+<button type="button" id="bookBtn">Book on WhatsApp</button>
+
+<input type="date" id="date" required>
+
+<input type="text" id="city" placeholder="Your City" value="Jaipur" required>
+
+<button type="button" id="bookBtn">Book on WhatsApp</button>
+    
   </form>
   </section>
 
